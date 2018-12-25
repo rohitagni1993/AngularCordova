@@ -1,0 +1,26 @@
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col col-xs-8">
+      <h2>Welcome to <br/> {{title}}</h2>
+    </div>
+  </div>
+  <hr>
+  <div style="text-align: center">
+    <p>
+      <mat-form-field appearance="outline" class="input-mod">
+        <mat-label>Username</mat-label>
+        <input matInput [(ngModel)]="username" required>
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="outline" class="input-mod">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput [(ngModel)]="password" required>
+      </mat-form-field>
+    </p>
+    <button mat-raised-button color="primary" class="btn-mod" (click)="logMe()">Login</button>
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>
